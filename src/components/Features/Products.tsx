@@ -102,7 +102,7 @@ export default function Products() {
             return
         }
 
-    }, [search, setSearch])
+    }, [search, setSearch , value , setValue])
 
     const searchHandler = (e: any) => {
         const val = e.target.value;
@@ -127,7 +127,7 @@ export default function Products() {
                     {
                         latestProducts?.length===0 && (
                             <Box>
-                                <Typography>No products Found</Typography>
+                                <Typography>No la products Found</Typography>
                             </Box>
                         )
                     }
@@ -166,7 +166,7 @@ export default function Products() {
                     {
                         popularProducts?.length===0 && (
                             <Box>
-                                <Typography>No products Found</Typography>
+                                <Typography>No pop products Found</Typography>
                             </Box>
                         )
                     }
@@ -205,7 +205,7 @@ export default function Products() {
                     {
                         featuredProducts?.length===0 && (
                             <Box>
-                                <Typography>No products Found</Typography>
+                                <Typography>No fea products Found</Typography>
                             </Box>
                         )
                     }
